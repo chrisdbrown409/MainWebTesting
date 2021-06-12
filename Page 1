@@ -1,0 +1,23 @@
+<HTML>
+  <Head>
+   <Title> "Title" </Title>
+  </Head>
+
+ <br>
+  
+<p>  
+<marquee behavior="scroll" direction="left"> continuous scroll text here </marquee>
+</p>
+
+<HR>
+</p>  
+<H6>How to scroll to the Left using Marquee Tag!</H6>
+</p>
+    
+<HR>
+<p style="font-family: times, serif; font-size:11pt; font-style:normal"> <!---in line comments--->
+Use the left arrow to go back!<br /> <!---in line comments--->
+Page: 1<br />
+<a href="https://www.bing.com/videos/search?q=what+is+the+code+in+html+for+scrolling&view=detail&mid=FBDDF9D0CBDB0E7FD6FBFBDDF9D0CBDB0E7FD6FB&FORM=VIRE&PC=APPL" target="_blank">Source Video</a><br />  
+Code: Web1<br />
+</p>
