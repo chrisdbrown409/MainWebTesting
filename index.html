@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 .collapsible {
-  background-color: #777;
+  background-color: #F2D7D5;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -20,7 +20,7 @@
 }
 
 .active, .collapsible:hover {
-  background-color: #555;
+  background-color: #CD6155;
 }
 
 .collapsible:after {
@@ -54,7 +54,7 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/w3css/img_mountains_wide.jpg");
-  height: 40%;
+  height: 35%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,9 +86,68 @@ body, html {
   color: white;
 }
   
+  .sidenav {
+	height: 100%;
+	text-align: Left;
+  	width: 130px;
+  	position: fixed;
+ 	 z-index: 1;
+  	top: 220px;
+  	left: 10px;
+  	background: White;
+  	overflow-x: hidden;
+  	padding: 0px 0;
+}
+
+.sidenav a {
+  	padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+ 	text-decoration: none;
+	text-align: Left;
+  	font-size: 12px;
+  	color: #2196F3;
+  	display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+
+.main {
+  margin-left: 140px; /* Same width as the sidebar + left position in px */
+  /*font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 220px;}
+  .sidenav a {font-size: 12px;}
+}
+	
+ footer {
+	/*position: Fixed; this makes it sticky always at the bottom of the page*/
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	background-color: White;
+	color: blank;
+	text-align: left;
+  	font-family: times,serif;
+  	font-size:8pt;
+  	font-style:normal;
+ }
   </style>
 </head>
-<body>
+
+  
+  
+  
+  
+  
+  
+  
+  
+ <body>
 
 <div class="hero-image">
   <div class="hero-text">
@@ -103,20 +162,33 @@ body, html {
 
   
   
-  
-  
-  
-  
-
-
-
-  <!--- <p>A Collapsible:</p>
-    <button class="collapsible">Open Collapsible</button>
-    <div class="content">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+<div class="sidenav">
+    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Additional Links</U></P>
+    	<a href="https://chrisdbrown409.github.io/MainPage/>Home</a>
+    	<a href="https://github.com/chrisdbrown409">GIT Hub Root</a>	
+    	<a href="https://github.com/chrisdbrown409/MainQA">GIT Hub Repository</a>
+    	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a>
+    	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a>
+	    <!--- LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br /> --->
     </div>
-  --->
+  
+  <div class="main">
+<div>
+<p style="font-family: times, serif; font-size:14pt; font-style:normal"> <!---in line comments--->
+Site Pages<br />
+	</p>
+	<p style="font-family: times, serif; font-size:12pt; font-style:normal"> <!---in line comments--->
+	<blockquote>
+	The below sections are grouped by topics relevant to Quality Assurance and IT Professionals. Each section expands and explores the topics within the section.<br />
+	</blockquote>
+	</p>
+</div>
+  
 
+
+
+
+<!---start buttons--->  
 <button class="collapsible">International Software Testing Qualifications Board (ISTQB)</button>
 <div class="content">
   <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board" target="_blank">https://en.wikipedia.org/wiki/International_Software_Testing_Qualifications_Board</a><br />
@@ -137,6 +209,11 @@ body, html {
     Test.</p>
 </div>
 
+
+   
+   
+   
+<!--- Collaspe Script--->   
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
@@ -154,8 +231,16 @@ for (i = 0; i < coll.length; i++) {
 }
 </script>
 
-</body>  
- 
+
+   
+<Footer>
+<HR>  
+   <b>Repository Information:</b><br />
+  	Version:1.11<br />
+  	Last Update:06-20-2021<br />   
+ </Footer>
+</body>
+</html>
 
   
 
@@ -180,8 +265,18 @@ for (i = 0; i < coll.length; i++) {
    
   <!---
   References:
-  Page URL: https://chrisdbrown409.github.io/MainQA/
-  Color Ref: https://blog.hubspot.com/website/change-background-color-html
-  Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
-  Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+    Page URL: https://chrisdbrown409.github.io/MainQA/
+    Side Nav: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed
+    Color Ref: https://blog.hubspot.com/website/change-background-color-html
+    Email Ref: https://www.tutorialspoint.com/html/html_email_links.htm
+ 	  Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
+	  Lists Ref: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_ordered
+	  Style Line: <p style="font-family: times, serif; font-size:12pt; font-style:normal">
+	  hero image: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_hero_image
+  --->
+  
+  
+  	
+  --->
+  
   --->
