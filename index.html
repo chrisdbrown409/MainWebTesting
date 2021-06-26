@@ -9,15 +9,17 @@
 <style>
 .collapsible {
   	background-color: #b88d33;
-  	margin-left: 40px;
+  	height: 10%; /*reactive*/
+	margin-left: 40px;
   	color: white;
   	cursor: pointer;
-  	padding: 18px;
-  	width: 50%;
+  	/*padding: 18px; /*non-reactive*/
+	padding: 1%; /*reactive*/
+	width: 50%;
   	border: none;
-  	text-align: left;
+  	text-align: Left;
   	outline: none;
-  	font-size: 12px;
+  	font-size: 14px;
 	font-family: times,serif;
 }
 
@@ -26,12 +28,13 @@
 }
 
 .collapsible:after {
-  content: '\002B'; /* Unicode character for "plus" sign (+) */
+	content: '\002B'; /* Unicode character for "plus" sign (+) */
   	margin-left: 40px;
-  	color: white;
+	color: white;
   	font-weight: bold;
-  	float: right;
-  	font-size: 12px;
+  	float: Right;
+  	margin-left: 5px;
+  	font-size: 14px;
 	font-family: times,serif;
 }
 
@@ -41,8 +44,9 @@
 
 .content {
   	padding: 0 18px;
+	width: 80%; 
   	margin-left: 40px;
-  	max-height: 0;
+ 	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
   	background-color: #F8F9F9;
@@ -58,62 +62,57 @@ body, html {
     }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.all-free-download.com/images/graphiclarge/backlit_dawn_dusk_evening_fog_hill_landscape_light_602902.jpg");
-  height: 35%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.all-free-download.com/images/graphiclarge/backlit_dawn_dusk_evening_fog_hill_landscape_light_602902.jpg");
+  	height: 30%;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+	max-width:100%; /*responsive design*/
+	/*height:auto; responsive design*/
 }
 
 .hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  	border: none;
-  	outline: 0;
-  	display: inline-block;
-  	padding: 10px 25px;
-  	color: black;
-  	background-color: #ddd;
   	text-align: center;
-  	cursor: pointer;
-	font-family: times,serif;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	color: white;
 }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-  
+body {
+	font-family: times,serif;
+	
+	
   .sidenav {
 	height: 100%;
 	text-align: Left;
-  	width: 130px;
   	position: absolute; /*will hold sidenav in place*/
  	 z-index: 1;
-  	top: 220px;
-  	left: 10px;
+  	width: 12%; /*repsonsive:*15*/
+	top: 32%;
+	left: 1%;
+	/*width: 130px;*/
+	/*top: 220px;*
+  	/*left: 10px;*/
   	background: White;
   	overflow-x: hidden;
   	padding: 0px 0;
 	font-family: times,serif;
+	/*font-family: Arial, sans-serif;*/
+	font-size: 12px;
 }
 
 .sidenav a {
-  	padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+  	/*padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
  	text-decoration: none;
 	text-align: Left;
+	font-family: times,serif;
   	font-size: 12px;
   	color: #2196F3;
   	display: block;
-	font-family: times,serif;
 }
 
 .sidenav a:hover {
@@ -122,9 +121,10 @@ body, html {
 
 
 .main {
-  margin-left: 140px; /* Same width as the sidebar + left position in px */
-  /*font-size: 28px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
+	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+  	/*font-size: 28px; /* Increased text to enable scrolling */
+  	padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -134,8 +134,9 @@ body, html {
 	
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
-	margin-left: 40px;
-	/*width: 100%;*/
+	/*margin-left: 40px;*/
+	margin-left: 4%; /*reponsive*/
+	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
 	bottom: 0;
@@ -162,10 +163,6 @@ body, html {
 <div class="hero-image">
   <div class="hero-text">
     <h3 style="font-size:25px">Web Testing</h3>
-    <!---
-    <p>And I'm a Photographer</p>
-    <button>Hire me</button>
-    --->
   </div>
 </div>
 <HR>
@@ -173,7 +170,7 @@ body, html {
   
   
 <div class="sidenav">
-    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Additional Links</U></P>
+    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Links</U></P>
     	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a>
     	<a href="https://github.com/chrisdbrown409">GIT Hub Root</a>	
     	<a href="https://github.com/chrisdbrown409/MainWebTesting">GIT Hub Repository</a>
@@ -189,7 +186,7 @@ Page Links<br />
 	</p>
 	<p style="font-family: times,serif; font-size:12pt; font-style:normal"> <!---in line comments--->
 	<blockquote>
-	The below sections discuss information regarding the various web testing. Each section expands and explores the topics within the section.<br />
+	The below sections discuss information regarding the various web testing. Web testing is an extensive category. Only a few topics will be covered. Each section expands and explores the topics within the section.<br />
 	</blockquote>
 	</p>
 </div>
@@ -199,12 +196,12 @@ Page Links<br />
 
 
 <!---start buttons--->  
-<button class="collapsible">Application Programming Interface (API): General Information </button>
+<button class="collapsible">Application Programming Interface (API): Information </button>
 	<div class="content">
   		<p>Wikipedia: <a href="https://en.wikipedia.org/wiki/API" target="_blank">https://en.wikipedia.org/wiki/API</a>
 		<br />
-	</p>
-	</div>
+		</p>
+		</div>
 
 <button class="collapsible">Application Programming Interface (API): Tools</button>
 	<div class="content">
@@ -230,7 +227,8 @@ Page Links<br />
 	
   <button class="collapsible">Mobile Web Page Testing</button>
 	<div class="content">
-   		<br />
+   		This section allows one to enter a URL to view how the site will be rendered on a mobile device.
+		<br />
    		Google Mobile App Testing: <a href="https://search.google.com/test/mobile-friendly" target="_blank">https://search.google.com/test/mobile-friendly</a>
 		<br />
 		</p>
@@ -267,10 +265,11 @@ for (i = 0; i < coll.length; i++) {
    
 <Footer>
 <HR>  
-   <b>Repository Information:</b><br />
+   	<b>Repository Information:</b><br />
   	Version:1.13<br />
   	Last Update:06-20-2021<br />   
- </Footer>
+ 	<HR> 
+	</Footer>
 </body>
 </html>
 
