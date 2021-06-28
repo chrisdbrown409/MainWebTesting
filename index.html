@@ -1,17 +1,16 @@
-<!doctype html>
-<html lang="en-US" dir="ltr">
-
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" 		content="width=device-width, initial-scale=1.0">
-	<meta name="description" 	content="Chris Brown | Quality Assurance"> <!---Web Searches--->
-	<Title>Chris Brown | Web Testing</Title>
+  <Title> "Chris Brown | Website Testing" </Title>
 
+
+<!---Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible--->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-collapsible {
+.collapsible {
   	background-color: #b88d33;
   	height: 10%; /*reactive*/
-	/*margin-left: 14%; controlled by main class*/
+	margin-left: 40px;
   	color: white;
   	cursor: pointer;
   	/*padding: 18px; /*non-reactive*/
@@ -30,7 +29,7 @@ collapsible {
 
 .collapsible:after {
 	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	/*margin-left: 14%; controlled by main class*/
+  	margin-left: 40px;
 	color: white;
   	font-weight: bold;
   	float: Right;
@@ -46,7 +45,7 @@ collapsible {
 .content {
   	padding: 0 18px;
 	width: 80%; 
-  	/*margin-left: 14%; controlled by main class*/
+  	margin-left: 40px;
  	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
@@ -74,7 +73,6 @@ body, html {
 }
 
 .hero-text {
- 	font-family: times,serif;
   	text-align: center;
   	position: absolute;
   	top: 50%;
@@ -108,7 +106,8 @@ body {
 }
 
 .sidenav a {
-  	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
+  	/*padding: 0px 8px 6px 16px; /*top,right,bottom, left */
+	padding: 0% 0% .5% 1.0%; /*top,right,bottom, left */
  	text-decoration: none;
 	text-align: Left;
 	font-family: times,serif;
@@ -124,11 +123,9 @@ body {
 
 .main {
   	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	padding: 0px 10px;
-	font-style:normal;
-	/*margin-left: 40px;*/
-	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-	font-family: times,serif;
+	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+  	/*font-size: 28px; /* Increased text to enable scrolling */
+  	padding: 0px 10px;
 }
 
 @media screen and (max-height: 450px) {
@@ -139,7 +136,7 @@ body {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	/*margin-left: 4%; controlled by main class*/
+	margin-left: 4%; /*reponsive*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -167,7 +164,7 @@ body {
 
 <div class="hero-image">
   <div class="hero-text">
-    <h1 style="font-size:25px">Website Testing</h1>
+    <h3 style="font-size:25px">Website Testing</h3>
   </div>
 </div>
 <HR>
@@ -175,21 +172,26 @@ body {
   
   
 <div class="sidenav">
-    	<p style="font-size:12pt;"><U>Links</U></P>
+    	<p style="font-family: times, serif; font-size:12pt; text-align: left; font-style:normal"> <U>Links</U><br /></P>
     	<a href="https://chrisdbrown409.github.io/MainPage/">Home</a><br />
-    	<a href="https://github.com/chrisdbrown409">Github Root</a><br />
-    	<a href="https://github.com/chrisdbrown409/MainWebTesting/blob/main/index.html">Github Repository</a><br />
+    	<a href="https://github.com/chrisdbrown409">GIT Hub Root</a><br />
+    	<a href="https://github.com/chrisdbrown409/MainWebTesting/blob/main/index.html">GIT Hub Repository</a><br />
     	<a href = mailto:chrisdbrown409@gmail.com>Email Author</a><br />
     	<a href="https://www.linkedin.com/in/chrisbrown72/">Author's Profile</a><br />
-	
+	    <!--- LinkedIn Profile: <a href="https://www.linkedin.com/in/chrisbrown72/" target="_blank">https://www.linkedin.com/in/chrisbrown72/</a><br /> --->
     </div>
   
 <div class="main">
 	<div>
-	<h2 style="font-size:14pt;">Web Testing</h2>
+	<p style="font-family: times, serif; font-size:14pt; font-style:normal; margin-left: 40px;"> <!---in line comments--->
+	Website Testing<br />
+	</p>
+	<p style="font-family: times,serif; font-size:12pt; font-style:normal"> <!---in line comments--->
+	<blockquote>
 	There are many ways a website can be tested with many different suggestions. Web site testing is an extensive category therefore only a few topics will be covered. <br />
 	<br />
 	Each section expands and explores the topics within the section.<br />
+	</blockquote>
 	</p>
 </div>
   
@@ -272,7 +274,6 @@ for (i = 0; i < coll.length; i++) {
 </html>
 
  <!---
-
 Page References:
 	Site References:
   	1. Collapse Ref: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible
