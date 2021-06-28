@@ -11,7 +11,7 @@
 .collapsible {
   	background-color: #b88d33;
   	height: 10%; /*reactive*/
-	margin-left: 40px;
+	/*margin-left: 14%; controlled by main class*/
   	color: white;
   	cursor: pointer;
   	/*padding: 18px; /*non-reactive*/
@@ -30,7 +30,7 @@
 
 .collapsible:after {
 	content: '\002B'; /* Unicode character for "plus" sign (+) */
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
 	color: white;
   	font-weight: bold;
   	float: Right;
@@ -46,7 +46,7 @@
 .content {
   	padding: 0 18px;
 	width: 80%; 
-  	margin-left: 40px;
+  	/*margin-left: 14%; controlled by main class*/
  	max-height: 0;
   	overflow: hidden;
   	transition: max-height 0.2s ease-out;
@@ -95,9 +95,6 @@ body {
   	width: 12%; /*repsonsive:*15*/
 	top: 32%;
 	left: 1%;
-	/*width: 130px;*/
-	/*top: 220px;*
-  	/*left: 10px;*/
   	background: White;
   	overflow-x: hidden;
   	padding: 0px 0;
@@ -124,9 +121,11 @@ body {
 
 .main {
   	/*margin-left: 140px; /* Same width as the sidebar + left position in px */
-	margin-left: 11%; /* Same width as the sidebar + left position in px */ /*reponsive*/
-  	/*font-size: 28px; /* Increased text to enable scrolling */
-  	padding: 0px 10px;
+	padding: 0px 10px;
+	font-style:normal;
+	/*margin-left: 40px;*/
+	margin-left: 17%; /* Same width as the sidebar + left position in px */ /*reponsive*/
+	font-family: times,serif;
 }
 
 @media screen and (max-height: 450px) {
@@ -137,7 +136,7 @@ body {
  footer {
 	/*position: Fixed; this makes it sticky always at the bottom of the page*/
 	/*margin-left: 40px;*/
-	margin-left: 4%; /*reponsive*/
+	/*margin-left: 4%; controlled by main class*/
 	width: 100%;
 	padding: 0px 0px 10px 0px; /*top,right,bottom, left */
 	left: 0;
@@ -267,8 +266,8 @@ for (i = 0; i < coll.length; i++) {
 <Footer>
 <HR>  
    	<b>Repository Information:</b><br />
-  	Version:2.01<br />
-  	Last Update:06-26-2021<br />   
+  	Version:1.00<br />
+  	Last Update:06-28-2021<br />   
 	<HR>
 </Footer>
 </body>
